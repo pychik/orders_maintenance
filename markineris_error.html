@@ -524,7 +524,7 @@
     <!-- END FOOTER-ALT -->
 
 
-<div class="modal fade" id="client_messageModal" tabindex="-1" role="dialog" aria-labelledby="client_messageModalLabel" aria-hidden="true">
+<div class="modal fade" id="client_messageModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="client_messageModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-white bg-danger">
@@ -557,11 +557,14 @@
 
   
   <script src="js/bootstrap.bundle.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script>
   
-      $(window).on('load',function(){        
-        $("#client_messageModal").modal({backdrop: "static"});
-    });
+      window.onload = function () {
+        
+            
+        $("#client_messageModal").modal('show');
+    };
   </script>
   
     <!-- animation -->

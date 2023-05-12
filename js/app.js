@@ -219,3 +219,8 @@ particlesJS("particles-js", {
 // Animaten js
 
  AOS.init();
+
+document.addEventListener("DOMContentLoaded", function(){
+    let svg = document.querySelector('.logos');
+    svg.classList.add('active');
+});

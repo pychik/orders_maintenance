@@ -558,7 +558,9 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script>
   
-      $(window).on('load',function(){        
+      window.onload = function () {
+        OpenBootstrapPopup();
+            
         $("#client_messageModal").modal({backdrop: "static"});
     });
   </script>

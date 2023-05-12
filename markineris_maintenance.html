@@ -523,7 +523,7 @@
     </div>
     <!-- END FOOTER-ALT -->
 
-<div class="modal fade" id="client_messageModal" tabindex="-1" role="dialog" aria-labelledby="client_messageModalLabel" aria-hidden="true">
+<div class="modal fade" id="client_messageModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="client_messageModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header" style="background-color:#fcff69">
@@ -562,7 +562,7 @@
       window.onload = function () {
         
             
-        $("#client_messageModal").modal({backdrop: "static"});
+        $("#client_messageModal").modal('show');
     };
   </script>
   

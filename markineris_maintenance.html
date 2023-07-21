@@ -524,7 +524,7 @@
     <!-- END FOOTER-ALT -->
 
 
-<div class="modal fade" id="client_messageModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="client_messageModalLabel" aria-hidden="true">
+<div class="modal fade" id="client_messageModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="client_messageModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header" style="background-color:#fcff69">
@@ -534,13 +534,15 @@
         </button>-->
       </div>
       <div class="modal-body">
-        В настоящий момент на сайте проводятся работы по обслуживанию. Пожалуйста, зайдите через некоторое время.<br> Приносим извинения за неудобства.
-	<br><br>
-	— Ваш <b>Multi Orders</b> сервис
+        В настоящий момент на сайте проводятся работы по обслуживанию. Пожалуйста, зайдите через некоторое время.
+        <br> Приносим извинения за неудобства.
+
+      <br><br>
+	— Ваш <b>Markineris</b>
       </div>
       <div class="modal-footer">
-        <!--<button type="button" class="btn" style="background-color:#fcff69" data-dismiss="modal">Ок</button>-->
-         
+<!--        <button type="button" class="btn" style="background-color:#fcff69" data-dismiss="modal">Ок</button>-->
+
       </div>
     </div>
   </div>
@@ -555,14 +557,23 @@
     <!--Bootstrap Js-->
 
   
-  <script src="js/bootstrap.bundle.min.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="
+  https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js
+  "></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"
+      integrity="sha512-IOebNkvA/HZjMM7MxL0NYeLYEalloZ8ckak+NDtOViP7oiYzG5vn6WVXyrJDiJPhl4yRdmNAG49iuLmhkUdVsQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+  </script>
   <script>
   
       window.onload = function () {
         
             
-        $("#client_messageModal").modal('show');
+        $("#client_messageModal").modal({backdrop: 'static'}, 'show');
     };
   </script>
   
